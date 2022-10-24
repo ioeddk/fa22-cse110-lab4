@@ -31,3 +31,46 @@ student.greeting();
 student["Favorite Teacher"].name
 ### E
 student.courseLoad[0]
+## Question 13
+### A
+'32' because number 2 is mapped to its string literals and contatenate with the string '3'.
+### B 
+1 is returned, because '3' is mapped to its integer representation and under arithmatic calculation with - 2. There are no operator overloading for - in string class.  
+### C
+`null` in javascript represent the intentional absence of any object value. It do make sense for number 3 plus nothing is itself. 
+### D
+'3null' is returned, because '3' is a string and with operator + makes it representing a concatenating operation. Thus, it contert `null` to an string with the same set of characters.
+### E
+4 is returned, because true as a boolean value is mapped to 1 as a number. 
+### F 
+0 is returned, because both 0 as a boolean value is mapped to 0. And 0 + nothing is still 0. 
+### G
+'3undefined' is returned because similarly, it translates 'undefined' directly to its string literal. 
+### H
+NaN is returned, because the operation of integer minus an NaN (undefined is mapped to NaN) result in an undefined behavior. NaN means not a number. 
+## Question 14
+### A
+true. It convertes '2' to 2 and compare with 1 and return true. 
+### B
+false. In this case, both string and are compared according to their alphabetical order. '2' should comes after '1', thus '2' should > '1'. 
+### C
+true. '2' is casted to its integer value 2, and the comparision is true. 
+### D
+false. === means strictly comparision, which checks the equlity without type conversion. In the case comparing an string with integer, it returns false. 
+### E
+false. true is casted to integer 1 and is not equal to 2. 
+### F
+true. because numbers other than 0 is converted to true in boolean. Here we explictly convert it to a boolean value true, and it is equal to another boolean value ture under strict comparision. 
+## Question 15
+== is comparision, it will cast the data type automatically if necessary. If one side is integer, it tries to convert the other side to integer. If conversion fails, it converts both sides to string and compares them according to alphabetical order. === means the strict comparision, which make the comparision without automatic type conversion. It returns true if both sides have the same type and value. 
+## Question 16
+See the part2-question16.js file.
+## Question 17
+`[ 2, 4, 6]` is returned. `doSomething` is passed in as an function, to the parameter `callback`. In the for loop, `array[i]` gives all the values in the array, and the `callback`, which is `doSomething` here, doubles the number's value. Then they are pushed into the new array. 
+## Question 18
+See the part2-question18.js file. 
+## Question 19
+1
+4
+3
+2
